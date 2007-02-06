@@ -1,6 +1,4 @@
-#summary One-sentence summary of this page.
-
-= Macaon Wiki =
+#summary Page d'acceuil du wiki de Macaon.
 
 Ce wiki est l'espace de travail des modules d'analyse et annotation linguistique macaon. Consultez ModificationsRécentes pour voir la liste des derniers changements ou pour trouver le lien vers le RSS des modifications des pages du wiki (sans doute manière la plus pratique d'être au courant des changements).
 
@@ -41,5 +39,4 @@ Ce wiki est l'espace de travail des modules d'analyse et annotation linguistique
 
 === Divers ===
  * IcôneMacaon
-
 
