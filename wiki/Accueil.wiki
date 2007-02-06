@@ -1,0 +1,45 @@
+#summary One-sentence summary of this page.
+
+= Macaon Wiki =
+
+Ce wiki est l'espace de travail des modules d'analyse et annotation linguistique macaon. Consultez ModificationsRécentes pour voir la liste des derniers changements ou pour trouver le lien vers le RSS des modifications des pages du wiki (sans doute manière la plus pratique d'être au courant des changements).
+
+=== Modules ===
+ * Implémentés
+   * Création de documents XML à partir du texte: MacaTxt2Document
+   * Découpage des documents en phrases et paragraphes: MacaSegmenter
+   * Découpage des phrases en unités indivisibles: MacaTokenizer
+   * Reconnaissance d'entités nommées: ["MacaNEMatcher"]
+   * Regroupement d'unités indivisibles en mots: MacaLexer
+   * Etiquetteur morpho-syntaxique: MacaTagger
+   * Annotation des traits morphologiques: MacaAnaMorph
+   * Analyse syntaxique superficielle: MacaChunker
+ * Proposés
+   * Résolution des liens anaphoriques: MacaProAnaphora
+   * reconnaissance d'événements
+   * desambiguisation lexicale
+   * annotation des fonctions syntaxiques
+   * résolution des rattachements prépositionnels
+   * résolution des liens de coréférence (nominale et pronominale)
+
+=== Librairies et structures de données ===
+ * MacaCommon
+ * ["MacaDicoFF"] (est devenu MacaLex)
+ * MacaLex
+
+
+=== Installation ===
+
+ * MacaInstallation
+
+=== Définition des documents ===
+ * ["DTDsMacaon"]
+
+=== Ressources ===
+ * [http://www.labri.fr/perso/clement/lefff/ lefff]
+ * FichierEtiquettes
+
+=== Divers ===
+ * IcôneMacaon
+
+
