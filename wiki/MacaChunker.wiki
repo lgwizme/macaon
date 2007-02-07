@@ -1,6 +1,6 @@
 #summary Module d'analyse syntaxique partielle.
 
-== MacaChunker : maca_chunker ==
+=maca_chunker=
 Permet de définir et utiliser une cascade de transducteurs déterministes pour regrouper des symboles et construire une analyse syntaxique superficielle d'une séquence d'étiquettes morpho-syntaxiques.
 
 ||Responsable||AlejandroAcosta||
@@ -9,7 +9,7 @@ Permet de définir et utiliser une cascade de transducteurs déterministes pour 
 ||Date||2006/12/20||
 ||Distribution||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_chunker-2.3.1.tar.gz maca_chunker-2.3.1.tar.gz]||
 
-||DTD Entrée||DTD Sortie||
+|| *DTD Entrée* || *DTD Sortie* ||
 ||[MacaPostTaggingDTD]||[MacaPostChunkingDTD]||
 
 === Prérequis ===
@@ -43,7 +43,7 @@ eg. maca_chunker -i in.xml -o out.xml -v
 
 ==== Historique des révisions ====
 
-||*Date*||*Version*||*URL*||
+|| *Date* || *Version* || *URL* ||
 ||2006/12/20||2.3.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_chunker-2.3.1.tar.gz maca_chunker-2.3.1.tar.gz]||
 ||2006/09/29||2.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-2.1.tar.gz chunker-2.1.tar.gz]||
 ||2006/09/06||2||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-2.tar.gz chunker-2.tar.gz]||
@@ -52,5 +52,6 @@ eg. maca_chunker -i in.xml -o out.xml -v
 ||2006/02/02||1.5||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.5.tar.gz chunker-1.5.tar.gz]||
 ||2005/10/27||1.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.1.tar.gz chunker-1.1.tar.gz]||
 ||2005/10/14||1.0||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.0.tar.gz chunker-1.0.tar.gz]||
+
 
 
