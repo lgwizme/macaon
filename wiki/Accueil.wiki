@@ -10,7 +10,7 @@ Ce wiki est l'espace de travail des modules d'analyse et annotation linguistique
    * Création de documents XML à partir du texte: MacaTxt2Document
    * Découpage des documents en phrases et paragraphes: MacaSegmenter
    * Découpage des phrases en unités indivisibles: MacaTokenizer
-   * Reconnaissance d'entités nommées: ["MacaNEMatcher"]
+   * Reconnaissance d'entités nommées: [MacaNEMatcher]
    * Regroupement d'unités indivisibles en mots: MacaLexer
    * Etiquetteur morpho-syntaxique: MacaTagger
    * Annotation des traits morphologiques: MacaAnaMorph
