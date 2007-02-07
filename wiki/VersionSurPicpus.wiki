@@ -1,4 +1,4 @@
-#summary Concernant macon@ picpus.linguist.jussieu.fr
+#summary Installation de macon@picpus.linguist.jussieu.fr
 
 == Introduction ==
 
@@ -21,4 +21,3 @@ maca_hmm_tagger -i - | maca_anamorph -i - | maca_chunker -o resultat.xml
 }}}
 
 NB. Dans tous les cas, faites bien attention à utiliser un encodage UTF-8.
-
