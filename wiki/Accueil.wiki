@@ -1,4 +1,4 @@
-#summary Page d'acceuil du wiki de Macaon.
+#summary Page d'accueil du wiki de Macaon.
 #labels Featured
 
 =MACAON wiki=
