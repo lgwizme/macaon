@@ -1,6 +1,6 @@
 #summary Module de découpage de texte en paragraphes et phrases.
 
-== MacaSegmenter : maca_segmenter ==
+= maca_segmenter =
 
 Découpage d'un document en paragraphes et phrases. A partir de la version 2.3 ce module permet aussi de passer de texte en UTF-8 à un document XML découpé en phrases, c'est le mode txt2xml (qui n'a donc pas besoin d'un document qui suit la DTD d'entrée).
 
