@@ -54,4 +54,3 @@ eg. maca_chunker -i in.xml -o out.xml -v
 ||2005/10/14||1.0||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.0.tar.gz chunker-1.0.tar.gz]||
 
 
-
