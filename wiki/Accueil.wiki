@@ -1,6 +1,8 @@
 #summary Page d'acceuil du wiki de Macaon.
 #labels Featured
 
+=MACAON wiki=
+
 Ce wiki est l'espace de travail des modules d'analyse et annotation linguistique macaon. Consultez ModificationsRécentes pour voir la liste des derniers changements ou pour trouver le lien vers le RSS des modifications des pages du wiki (sans doute manière la plus pratique d'être au courant des changements).
 
 === Modules ===
