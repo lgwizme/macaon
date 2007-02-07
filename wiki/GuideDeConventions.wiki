@@ -1,0 +1,18 @@
+#summary On est d'accord sur les points suivants.
+
+= Introduction =
+
+Nous décrivons dans cette page un certain nombre de conventions du projet.
+
+== Nommage ==
+
+Les noms des modules, librairies, etc. utilisent le préfixe {{{maca_}}}
+
+== Options des modules ==
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
+
+
