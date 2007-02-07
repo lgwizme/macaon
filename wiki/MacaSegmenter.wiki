@@ -1,0 +1,61 @@
+#summary Module de découpage de texte en paragraphes et phrases.
+
+== MacaSegmenter : maca_segmenter ==
+
+Découpage d'un document en paragraphes et phrases. A partir de la version 2.3 ce module permet aussi de passer de texte en UTF-8 à un document XML découpé en phrases, c'est le mode txt2xml (qui n'a donc pas besoin d'un document qui suit la DTD d'entrée).
+
+||Responsable||AlejandroAcosta||
+||Langage||C++||
+||Dernière version||2.4||
+||Date||2006/12/20||
+||URL||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_segmenter-2.4.tar.gz maca_segmenter-2.4.tar.gz]||
+
+|| *DTD Entrée* || *DTD Sortie* ||
+||[MacaPreSegmentationDTD]||[MacaPostSegmentationDTD]||
+
+=== Prérequis ===
+ * Modules : aucun
+ * Librairies et programmes externes
+   * [http://xml.apache.org/xerces-c/ xerces-c] (XML)
+
+=== Commande et options ===
+{{{
+USAGE   : maca_segmenter [options]
+OPTIONS :
+   -h               show this message
+   -V               show version info and exit
+   -v               verbose mode (print messages)
+   -d               print boundary word set and exit
+   -i         xml file to segment (default: stdin)
+   -o         xml output file (default: stdout)
+   -a         append word set file to defaults
+   -r         replace word set defaults with file contents
+   -s         segment section with name 
+   -T               don't leave timestamp info
+   -t               txt2txt mode
+   -x               txt2xml mode
+
+eg. maca_segmenter -i input.xml -a dico -s content > result.xml
+    maca_segmenter -t  out.txt 
+    maca_segmenter -x  out.xml 
+
+A wordset file contains three sections listing: 2 letter words that can be
+found at the end of a sentence, and 3 and 4 letter accepted abreviations.
+The wordset file contains 1 word per line and three sections enclosed with
+the following tags:
+
+    enclosing the list of two-letter words
+    enclosing the list of three-letter words
+    enclosing the list of four-letter words
+
+}}} 
+
+
+==== Historique des révisions ====
+
+|| *Date* || * Version* || *URL* ||
+||2006/12/20||2.4||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_segmenter-2.4.tar.gz maca_segmenter-2.4.tar.gz]||
+||2006/11/10||2.3||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/macasegmenter-2.3.tar.gz macasegmenter-2.3.tar.gz]||
+||2006/11/03||2.2||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/macasegmenter-2.2.tar.gz macasegmenter-2.2.tar.gz]||
+||2006/09/27||2.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/segmenter-2.1.tar.gz segmenter-2.1.tar.gz]||
+||2006/05/01||2||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/segmenter-2.tar.gz segmenter-2.tar.gz]||
