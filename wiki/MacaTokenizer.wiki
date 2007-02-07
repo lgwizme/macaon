@@ -1,4 +1,4 @@
-#summary Découpage des phrases en atomes.
+#summary Module de découpage des phrases en atomes.
 
 =maca_tokenizer=
 
