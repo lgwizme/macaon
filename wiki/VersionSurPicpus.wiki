@@ -10,14 +10,25 @@ Pour le traitement d'une phrase en ligne de commande (le résultat est écrit da
 {{{
 picpus$ echo "Je suis une phrase écrite le 5 février"
 Je suis une phrase écrite le 5 février
-picpus$ echo "Je suis une phrase écrite le 5 février" | maca_segmenter -x | maca_tokenizer | maca_nematcher |
-maca_lexer -i - | maca_hmm_tagger -i - | maca_anamorph -i - | maca_chunker -o resultat.xml 
+picpus$ echo "Je suis une phrase écrite le 5 février" |
+maca_segmenter -x |
+maca_tokenizer |
+maca_nematcher |
+maca_lexer -i - |
+maca_hmm_tagger -i - |
+maca_anamorph -i - |
+maca_chunker -o resultat.xml 
 }}}
 
 Pour le traitement d'un fichier (le fichier texte est _entree.txt_, le résultat est écrit dans le fichier _resultat.xml_):
 {{{
-picpus$ maca_segmenter -x -i entree.txt | maca_tokenizer | maca_nematcher | maca_lexer -i - |
-maca_hmm_tagger -i - | maca_anamorph -i - | maca_chunker -o resultat.xml 
+picpus$ maca_segmenter -x -i entree.txt |
+maca_tokenizer |
+maca_nematcher |
+maca_lexer -i - |
+maca_hmm_tagger -i - |
+maca_anamorph -i - |
+maca_chunker -o resultat.xml 
 }}}
 
 NB. Dans tous les cas, faites bien attention à utiliser un encodage UTF-8.
