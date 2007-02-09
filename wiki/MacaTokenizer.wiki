@@ -15,13 +15,15 @@ Découpe les phrases d'un document en unités indivisibles.
 
 Avec l'installation de ce module, la librarie python 'pytok', contenant une seule fonction: 'lex' est aussi installée.
 
-=== Prérequis ===
- * Modules
+=== Dépendances ===
+ * Modules : aucun
+ * Paquets non-standard
+   * python-dev
  * Librairies externes
    * [http://flex.sourceforge.net/ flex]
    * [http://pyxml.sourceforge.net/ PyXML]
 
-=== Commande et options ===
+=== Commande ===
 {{{
 USAGE  : maca_tokenizer [OPTIONS]
 OPTIONS:
