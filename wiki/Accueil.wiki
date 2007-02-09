@@ -3,7 +3,7 @@
 
 =MACAON wiki=
 
-Ce wiki est l'espace de travail des modules d'analyse et annotation linguistique macaon. Consultez ModificationsRécentes pour voir la liste des derniers changements ou pour trouver le lien vers le RSS des modifications des pages du wiki (sans doute manière la plus pratique d'être au courant des changements).
+Ce wiki est l'espace de travail des modules d'analyse et annotation linguistique macaon. Pour voir la liste des derniers changements allez à la racine du [http://code.google.com/p/macaon/w/list wiki] en appuyant sur le tab "wiki" ci-dessus.
 
 === Modules ===
  * Implémentés
