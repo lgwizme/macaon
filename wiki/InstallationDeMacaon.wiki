@@ -2,12 +2,12 @@
 
 = Introduction =
 
-Ce n'est pas pour les faibles d'esprit.
+Les modules s'installent séparément. Consultez la documentation de chaque module. 
 
 
 = Détails =
 
 Voici un schéma de dépendances:
 
-[]
+[http://www.linguist.jussieu.fr/~aacosta/macaon/img/maca_dep.png]
 
