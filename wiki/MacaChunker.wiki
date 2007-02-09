@@ -12,13 +12,14 @@ Permet de définir et utiliser une cascade de transducteurs déterministes pour 
 || *DTD Entrée* || *DTD Sortie* ||
 ||[MacaPostTaggingDTD]||[MacaPostChunkingDTD]||
 
-=== Prérequis ===
+=== Dépendances ===
  * Modules : aucun
  * Librairies et programmes externes
+   * automake
    * [http://flex.sourceforge.net/ flex]
    * [http://xml.apache.org/xerces-c/ xerces-c] (XML)
 
-=== Commande et options ===
+=== Commande ===
 {{{
 USAGE   : maca_chunker [options]
 OPTIONS :
@@ -52,6 +53,5 @@ eg. maca_chunker -i in.xml -o out.xml -v
 ||2006/02/02||1.5||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.5.tar.gz chunker-1.5.tar.gz]||
 ||2005/10/27||1.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.1.tar.gz chunker-1.1.tar.gz]||
 ||2005/10/14||1.0||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.0.tar.gz chunker-1.0.tar.gz]||
-
 
 
