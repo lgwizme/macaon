@@ -13,12 +13,12 @@ Découpage d'un document en paragraphes et phrases. A partir de la version 2.3 c
 || *DTD Entrée* || *DTD Sortie* ||
 ||[MacaPreSegmentationDTD]||[MacaPostSegmentationDTD]||
 
-=== Prérequis ===
+=== Dépendances ===
  * Modules : aucun
  * Librairies et programmes externes
    * [http://xml.apache.org/xerces-c/ xerces-c] (XML)
 
-=== Commande et options ===
+=== Commande ===
 {{{
 USAGE   : maca_segmenter [options]
 OPTIONS :
