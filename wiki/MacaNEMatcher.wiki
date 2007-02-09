@@ -15,13 +15,13 @@ Utilise  des expressions régulières et des dictionnaires fournis par l'utilisa
 
 L'accès à un dictionnaire dans une base de données MySQL n'est pas encore configurable en ligne de commande et restera cachée jusqu'à ce qu'elle puisse être mieux implémentée. 
 
-=== Prérequis ===
+=== Dépendances ===
  * Modules: aucun
  * Librairies externes
    * [http://pyxml.sourceforge.net/ PyXML]
-   * [http://sourceforge.net/projects/mysql-python MySQLdb] (optionnel)
+   * [http://sourceforge.net/projects/mysql-python MySQLdb] (optionnelle)
 
-=== Commande et options ===
+=== Commande ===
 {{{
 USAGE  : maca_nematcher [OPTIONS]
 OPTIONS:
