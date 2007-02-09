@@ -2,7 +2,7 @@
 
 == Introduction ==
 
-AlejandroAcosta essaie de garder une version à jour des modules de MACAON installée sur picpus.
+AlejandroAcosta essaie de garder une version à jour des modules de MACAON installée sur picpus. Il y aura prochainement aussi des scripts divers pour l'utilisation de MACAON (eg. lancer tous les modules sur un repértoire de fichiers à traiter). 
 
 == Commande ==
 
@@ -32,3 +32,7 @@ maca_chunker -o resultat.xml
 }}}
 
 NB. Dans tous les cas, faites bien attention à utiliser un encodage UTF-8.
+
+== Autres scripts installés ==
+
+à venir.
