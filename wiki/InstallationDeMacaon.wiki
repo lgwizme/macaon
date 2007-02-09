@@ -1,0 +1,13 @@
+#summary Comment organiser l'installation des maca_modules.
+
+= Introduction =
+
+Ce n'est pas pour les faibles d'esprit.
+
+
+= Détails =
+
+Voici un schéma de dépendances:
+
+[]
+
