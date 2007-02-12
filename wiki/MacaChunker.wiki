@@ -37,6 +37,54 @@ eg. maca_chunker -i in.xml -o out.xml -v
 
 }}} 
 
+== Entrée ==
+Un document avec des phrases découpées en mots associés à des parties du discours. 
+
+{{{
+<!ELEMENT sentence (words) >
+
+<!ELEMENT words (word*) >
+
+<!ELEMENT word (pos) >
+<!ATTLIST word
+          id ID #REQUIRED >
+
+<!ELEMENT form (#PCDATA) >
+
+<!ELEMENT pos EMPTY >
+<!ATTLIST pos
+          tag  CDATA #REQUIRED >
+}}}
+
+== Sortie ==
+
+{{{
+<!ELEMENT sentence (words,chunks) >
+
+<!ELEMENT words (word*) >
+
+<!ELEMENT word (pos) >
+<!ATTLIST word
+          id ID #REQUIRED >
+
+<!ELEMENT pos EMPTY >
+<!ATTLIST pos
+          tag  CDATA #REQUIRED >
+
+<!ELEMENT chunks (chunk+) >
+<!ATTLIST chunks 
+          count CDATA #IMPLIED  
+          higher CDATA #IMPLIED > 
+
+<!ELEMENT chunk (chunk*) >
+<!ATTLIST chunk
+          height (0|1|2|3|4|5|6|7|8|9) 
+          type CDATA #REQUIRED         
+          subtype CDATA #IMPLIED       
+          head IDREF #REQUIRED         
+          id ID #REQUIRED >
+}}}
+
 ==== Historique des révisions ====
 
 || *Date* || *Version* || *URL* ||
@@ -48,5 +96,6 @@ eg. maca_chunker -i in.xml -o out.xml -v
 ||2006/02/02||1.5||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.5.tar.gz chunker-1.5.tar.gz]||
 ||2005/10/27||1.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.1.tar.gz chunker-1.1.tar.gz]||
 ||2005/10/14||1.0||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.0.tar.gz chunker-1.0.tar.gz]||
+
 
 
