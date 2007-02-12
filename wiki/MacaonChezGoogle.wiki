@@ -2,7 +2,7 @@
 
 = Downloads =
 
-Cette rubrique du projet sur google code ne sera utilisé que pour partager d'autres types de données en rapport avec Macon (schémas XML, etc.). La distribution des modules se fera soit par téléchargement anonyme du dépôt svn, soit pas les liens dans les pages du wiki qui correspondent à chaque module. 
+Cette rubrique du projet sur google code ne sera utilisée que pour partager des données en rapport avec Macon (schémas XML, etc.) autres que le code. La distribution des modules se fera soit par téléchargement anonyme à partir du dépôt svn, soit pas les liens dans les pages du wiki qui correspondent à chaque module. 
 
 = Wiki =
 
@@ -15,4 +15,3 @@ On invite les utilisateurs du projet à soumettre leurs problèmes, bugs, etc. d
 = Source =
 
 Les modules seront ajoutés au dépôt svn. Les dévéloppeurs pourront ainsi naviguer le code en ligne.
-
