@@ -1,0 +1,37 @@
+#summary Jeu d'étiquettes du lefff (utilisé par MacaHmmTagger)
+
+= Introduction =
+
+Le jeu d'étiquettes de MacaHmmTagger provient du lexique des formes fléchis du français (lefff).
+
+= Etiquettes =
+
+2006/05/02
+
+ * adj
+ * adv
+ * advneg (pas|point|que|guère|nullement)
+ * clneg (ne)
+ * cln (clitique nominatif : sujet)
+ * clo (clitique objet)
+ * coo (coordination)
+ * csu (conjonction de subordination)
+ * clr (clitique réfléchi)
+ * det
+ * nc (nom propre)
+ * np (nom commun)
+ * prorel (pronom relatif)
+ * pri (pronom intérrogatif)
+ * pro (pronom, tout court ?)
+ * etr (mot étranger)
+ * vppart (participe passé)
+ * vprespart (participe présent)
+ * v (verbe fini)
+ * vinf (infinitif)
+ * pref (préfixe)
+ * pres (interjection)
+ * poncts
+ * ponctw
+
+
+
