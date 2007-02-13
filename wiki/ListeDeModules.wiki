@@ -7,7 +7,7 @@
 == Modules existants ==
  * MacaSegmenter
  * MacaTokenizer
- * MacaNEMatcher
+ * [MacaNEMatcher]
  * MacaLexer
  * MacaHmmTagger
  * MacaAnaMorph
