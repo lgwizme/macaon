@@ -1,0 +1,95 @@
+#summary Module d'annotation de traits morphologiques.
+
+*Voir aussi :* InstallationDeMacaon, MacaLex, MacaCommon
+ 
+=maca_anamorp=
+
+Ce module utilise le lefff et ajoute des traits morphologiques aux mots en fonction de leur forme et de leur partie du discours.
+
+|| *Responsable* ||AlexisNasr||
+|| *Langage* ||C||
+|| *Dernière version* ||0.3||
+|| *Date* ||20/11/2006||
+|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_anamorph-0.3.tar.gz maca_anamorph-0.3]||
+
+=== Dépendances ===
+ * Librairies Macaon
+   * MacaCommon
+   * MacaLex
+ * Librairies et programmes externes
+   * [http://xmlsoft.org/ libxml2]
+
+=== Commande ===
+{{{
+
+}}} 
+
+== Entrée ==
+{{{
+<!ELEMENT sentence (words) >
+
+<!ELEMENT words (word+) >
+<!ATTLIST words
+          count CDATA #IMPLIED >
+
+<!ELEMENT word (form,pos+) >
+<!ATTLIST word
+          lex_id CDATA #IMPLIED >
+
+<!ELEMENT form (#PCDATA) >
+
+<!ELEMENT pos EMPTY >                                                                      
+<!ATTLIST pos                                                                                  
+          type  CDATA #REQUIRED >         
+}}}
+
+== Sortie ==
+Le module ajoute à chaque <pos> des <word>s du lexique les <lemma>s associés et les trait morphologiques correspondants. 
+{{{
+<!ELEMENT sentence (words) >                                                                   
+                                                                                               
+<!ELEMENT words (word+) >                                                                      
+<!ATTLIST words                                                                                
+          count CDATA #IMPLIED >                                                               
+                                                                                               
+<!ELEMENT word (form,pos+) >                                                                   
+<!ATTLIST word                                                                                                                                        
+          lex_id CDATA #IMPLIED >                                                                
+                                                                                               
+<!ELEMENT pos (lexeme*) >                                                                      
+<!ATTLIST pos                                                                                  
+          type  CDATA #REQUIRED >                                                               
+                                                                                               
+<!ELEMENT lexeme (morpho*) >                                                                   
+<!ATTLIST lexeme                                                                               
+          lemma CDATA #REQUIRED >                                                              
+                                                                                               
+<!ELEMENT morpho EMPTY >                                                                       
+<!ATTLIST morpho                                                                               
+          mode CDATA #IMPLIED                                                                  
+          person CDATA #IMPLIED                                                                
+          number CDATA #IMPLIED                                                                
+          gender CDATA #IMPLIED                                                                
+          tense CDATA #IMPLIED                                                                 
+          type CDATA #IMPLIED                                                                  
+          case CDATA #IMPLIED >                                                                
+                                                                                               
+<!ELEMENT form (#PCDATA) >   
+}}}
+
+== Historique des révisions ==
+
+|| *Date* || *Version* || *URL* ||
+||2006/11/20||0.3||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_anamorph-0.3.tar.gz maca_anamorph-0.3.tar.gz]||
+||2006/11/15||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_anamorph-0.2.tar.gz maca_anamorph-0.2.tar.gz]||
+||2006/09/27||0.0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/anamorph-0.tar.gz anamorph-0.tar.gz]||
+
+
+
+
+
+
+
+
+
+
