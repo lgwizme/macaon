@@ -1,0 +1,91 @@
+#summary Regroupement des atomes en mots du dictionnaire.
+
+*Voir aussi :* InstallationDeMacaon, MacaCommon, MacaLex
+ 
+=maca_lexer=
+
+Regroupe les atomes en mots du lexique du lefff.
+
+|| *Responsable* ||AlexisNasr||
+|| *Langage* ||C||
+|| *Dernière version* ||0.3||
+|| *Date* ||2006/11/20||
+|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.3.tar.gz maca_lexer-0.3]||
+
+=== Dépendances ===
+ * Librairies Macaon
+   * MacaCommon
+   * MacaLex 
+ * Librairies et programmes externes
+   * [http://xmlsoft.org/ libxml2]
+
+=== Commande ===
+{{{
+usage: maca_lexer [options]
+OPTIONS :
+      -h            : print this message
+      -V            : show version
+      -i <file>     : xml input file
+      -o <file>     : xml output file (default is stdout)
+      -v            : verbose mode
+}}} 
+
+== Entrée ==
+
+{{{
+<!ELEMENT sentence (tokens) >
+
+<!ELEMENT tokens (token|ne)+ >
+<!ATTLIST tokens >
+
+<!ELEMENT token (#PCDATA) >
+<!ATTLIST token
+          type CDATA #IMPLIED
+          id ID #REQUIRED >
+
+<!ELEMENT ne (token+) >
+<!ATTLIST pos CDATA #IMPLIED
+          type CDATA #REQUIRED >
+}}}
+
+== Sortie ==
+
+{{{
+<!ELEMENT sentence (tokens,words) >
+
+<!ELEMENT tokens (token|ne)+ >
+
+<!ELEMENT token (#PCDATA) >
+<!ATTLIST token
+          type CDATA #IMPLIED
+          id ID #REQUIRED >
+
+<!ELEMENT ne (token+) >
+<!ATTLIST pos CDATA #IMPLIED
+          type CDATA #REQUIRED >
+
+<!ELEMENT words (word+) >
+<!ATTLIST words
+          count CDATA #IMPLIED >
+
+<!ELEMENT word (form) >
+<!ATTLIST word
+          id ID #REQUIRED
+          tokens IDREFS #REQUIRED
+          type CDATA #IMPLIED >
+
+<!ELEMENT form (#PCDATA) >
+}}}
+
+== Historique des révisions ==
+
+|| *Date* || *Version* || *URL* ||
+||2006/11/20||0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.3.tar.gz maca_lexer-0.3.tar.gz]||
+||2006/11/15||0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.2.tar.gz maca_lexer-0.2.tar.gz]||
+||2006/09/27||0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/lexer-0.tar.gz lexer-0.tar.gz]||
+
+
+
+
+
+
