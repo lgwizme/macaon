@@ -1,4 +1,5 @@
 #summary Installation de macaon@picpus.linguist.jussieu.fr
+#labels Featured
 
 == Introduction ==
 
