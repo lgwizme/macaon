@@ -4,9 +4,11 @@
 
 Décrit un document avec toutes les annotations que les modules Macaon peuvent faire. 
 
-|| *Dernière version* ||0.2.1||
+|| *Dernière version* ||0.2.2||
 || *Date* ||2007/02/13||
 || *URL* ||[http://www.linguist.jussieu.fr/~aacosta/macaon/dtds/maca_document.dtd maca_document.dtd]||
+
+== La DTD ==
 
 Cette DTD contient des nombreux commentaires.
 
@@ -194,6 +196,7 @@ III. Cette partie concerne les annotations sur les entites de l'univers, leur d�
 ||2006/11/17||0.2.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/dtds/maca_document-0.2.1.dtd maca_document-0.2.1.dtd]||
 ||2006/11/17||0.2||[http://www.linguist.jussieu.fr/~aacosta/macaon/dtds/maca_document-0.2.dtd macadocument-0.2.dtd]||
 ||2005/11/16||0.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/dtds/maca_document-0.1.dtd macadocument-0.1.dtd]||
+
 
 
 
