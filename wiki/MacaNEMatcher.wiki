@@ -1,43 +1,74 @@
 #summary Module de reconnaissance de séquences d'atomes.
 
+*Voir aussi :* InstallationDeMacaon
+
 = maca_nematcher =
 
 Utilise  des expressions régulières et des dictionnaires fournis par l'utilisateur pour regrouper des unités indivisibles en entités typées (date, oraganisation, personne, lieu, ...) dites "entités nommées".
 
-||Responsable||AlejandroAcosta||
-||Langage||Python||
-||Dernière version||1.4.3||
-||Date||2006/12/13||
-||URL||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_nematcher-1.4.3.tar.gz maca_nematcher-1.4.3.tar.gz]||
-
-|| *DTD Entrée* || *DTD Sortie* ||
-||[MacaPreNEMatchingDTD]||[MacaPostNEMatchingDTD]||
+|| *Responsable* ||AlejandroAcosta||
+|| *Langage* ||Python||
+|| *Dernière version* ||1.4.3||
+|| *Date* ||2006/12/13||
+|| *URL* ||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_nematcher-1.4.3.tar.gz maca_nematcher-1.4.3]||
 
 L'accès à un dictionnaire dans une base de données MySQL n'est pas encore configurable en ligne de commande et restera cachée jusqu'à ce qu'elle puisse être mieux implémentée. 
 
 === Dépendances ===
- * Modules: aucun
- * Librairies externes
+ * Librairies et programmes externes
    * [http://pyxml.sourceforge.net/ PyXML]
    * [http://sourceforge.net/projects/mysql-python MySQLdb] (optionnelle)
 
-=== Commande ===
+== Commande ==
 {{{
 USAGE  : maca_nematcher [OPTIONS]
 OPTIONS:
     -h,--help            show this message
     -V,--version         show version info and exit
     -v,--verbose         print messages
-    -d,--dico      load  (several files can be loaded)
-    -i,--input     read input from  (defualt is stdin)
-    -o,--output    wite output to  (default is stdout)
-    -b,--batch      batch mode : process files in 
+    -d,--dico <file>     load <file> (several files can be loaded)
+    -i,--input <file>    read input from <file> (defualt is stdin)
+    -o,--output <file>   wite output to <file> (default is stdout)
+    -b,--batch <dir>     batch mode : process files in <dir>
     -w,--window n        size 'n' for the lookup window (default is 5)
     -T,--no-timestamp    don't leave timestamp info
 
 }}} 
 
-==== Historique des révisions ====
+== Entrée ==
+La sortie de MacaTokenize. 
+
+{{{
+<!ELEMENT sentence (tokens) >
+
+<!ELEMENT tokens (token+) >
+
+<!ELEMENT token (#PCDATA) >
+<!ATTLIST token
+          type CDATA #IMPLIED
+          id ID #REQUIRED >
+}}}
+
+== Sortie ==
+Les séquences de <token>s reconnues comme entités nommées sont rangées dans des éléments <ne>.
+
+{{{
+<!ELEMENT sentence (tokens) >
+
+<!ELEMENT tokens (token|ne)+ >
+<!ATTLIST tokens >
+
+<!ELEMENT token (#PCDATA) >
+<!ATTLIST token
+          type CDATA #IMPLIED
+          id ID #REQUIRED >
+
+<!ELEMENT ne (token+) >
+<!ATTLIST pos CDATA #IMPLIED
+          type CDATA #REQUIRED >
+}}}
+
+== Historique des révisions ==
 
 || *Date* || *Version* || *URL* ||
 ||2006/12/13||1.4.3||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_nematcher-1.4.3.tar.gz maca_nematcher-1.4.3.tar.gz]||
