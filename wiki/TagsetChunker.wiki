@@ -4,7 +4,7 @@
 
 Le jeu d'étiquettes de MacaChunker provient de la grammaire de chunks du français distribuée avec ce module.
 
-= Etiquettes =
+== Etiquettes ==
 
 2006/05/10
  * GADV (chunk adverbial)
@@ -27,7 +27,6 @@ En fonction de l'ordre d'application des différentes grammaires qui composent l
  # GN, GNr
  # GVf, GVi, GVfn, GVin
  # GP
-
 
 
 
