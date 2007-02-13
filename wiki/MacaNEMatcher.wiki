@@ -36,7 +36,7 @@ OPTIONS:
 }}} 
 
 == Entrée ==
-La sortie de MacaTokenize. 
+La sortie de MacaTokenizer. 
 
 {{{
 <!ELEMENT sentence (tokens) >
