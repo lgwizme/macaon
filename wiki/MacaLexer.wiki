@@ -72,7 +72,7 @@ OPTIONS :
 <!ATTLIST word
           id ID #REQUIRED
           tokens IDREFS #REQUIRED
-          type CDATA #IMPLIED >
+          lex_id CDATA #IMPLIED >
 
 <!ELEMENT form (#PCDATA) >
 }}}
