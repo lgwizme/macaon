@@ -4,7 +4,7 @@
 
 == Introduction ==
 
-Cette librairie est utilisé par plusieurs modules macaon
+Cette librairie est utilisée par plusieurs modules macaon
 
 || *Responsable* ||AlexisNasr||
 || *Langage* ||C||
@@ -23,5 +23,4 @@ Cette librairie est utilisé par plusieurs modules macaon
 ||2006/11/22||0.3||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_common-0.3.tar.gz maca_common-0.3.tar.gz]||
 ||2006/11/15||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_common-0.2.tar.gz maca_common-0.2.tar.gz]||
 ||2006/09/27||0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/common-0.tar.gz common-0.tar.gz]||
-
 
