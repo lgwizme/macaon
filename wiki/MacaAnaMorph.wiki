@@ -2,7 +2,7 @@
 
 *Voir aussi :* InstallationDeMacaon, MacaLex, MacaCommon
  
-=maca_anamorp=
+=maca_anamorph=
 
 Ce module utilise le lefff et ajoute des traits morphologiques aux mots en fonction de leur forme et de leur partie du discours.
 
@@ -21,6 +21,13 @@ Ce module utilise le lefff et ajoute des traits morphologiques aux mots en fonct
 
 === Commande ===
 {{{
+usage: maca_anamorph [options]
+OPTIONS :
+      -h            : print this message
+      -V            : show version
+      -i <file>     : xml input file
+      -o <file>     : xml output file (default is stdout)
+      -v            : verbose mode
 
 }}} 
 
