@@ -4,7 +4,7 @@
 
 Le jeu d'étiquettes de MacaHmmTagger provient du lexique des formes fléchis du français (lefff).
 
-= Etiquettes =
+== Etiquettes ==
 
 2006/05/02
 
@@ -32,6 +32,5 @@ Le jeu d'étiquettes de MacaHmmTagger provient du lexique des formes fléchis du
  * pres (interjection)
  * poncts
  * ponctw
-
 
 
