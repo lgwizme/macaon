@@ -190,11 +190,10 @@ III. Cette partie concerne les annotations sur les entites de l'univers, leur d√
 == Historique des r√©visions ==
 
 || *Date* || *Version* || *URL* ||
-||2006/11/17||0.2.2||[http://www.linguist.jussieu.fr/~aacosta/macaon/dtds/maca_document-0.2.2.dtd maca_document-0.2.2.dtd]||
+||2007/02/13||0.2.2||[http://www.linguist.jussieu.fr/~aacosta/macaon/dtds/maca_document-0.2.2.dtd maca_document-0.2.2.dtd]||
 ||2006/11/17||0.2.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/dtds/maca_document-0.2.1.dtd maca_document-0.2.1.dtd]||
 ||2006/11/17||0.2||[http://www.linguist.jussieu.fr/~aacosta/macaon/dtds/maca_document-0.2.dtd macadocument-0.2.dtd]||
 ||2005/11/16||0.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/dtds/maca_document-0.1.dtd macadocument-0.1.dtd]||
-
 
 
 
