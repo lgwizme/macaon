@@ -1,0 +1,75 @@
+#summary Module d'étiquetage morpho-syntaxique
+
+*Voir aussi :* InstallationDeMacaon, TagsetLefff, MacaCommon
+ 
+=maca_hmm_tagger=
+
+Etiquetage morpho-syntaxique fondé sur un modele statistique trigramme.
+
+|| *Responsable* ||AlexisNasr||
+|| *Langage* ||C||
+|| *Dernière version* ||0.4||
+|| *Date* ||2006/11/22||
+|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.4.tar.gz maca_hmm_tagger-0.4]||
+
+=== Dépendances ===
+ * Librairies Macaon
+   * MacaCommon
+ * Librairies et programmes externes
+   * [http://xmlsoft.org/ libxml2]
+
+=== Commande ===
+{{{
+usage: maca_hmm_tagger [options]
+OPTIONS :
+      -h            : print this message
+      -V            : show version
+      -i <file>     : xml input file
+      -o <file>     : xml output file (default is stdout)
+      -v            : verbose mode
+}}} 
+
+== Entrée ==
+{{{
+<!ELEMENT sentence (words) >
+
+<!ELEMENT words (word*) >
+
+<!ELEMENT word (form) >
+<!ATTLIST word
+          lex_id CDATA #REQUIRED >
+
+<!ELEMENT form (#PCDATA) >
+}}}
+
+== Sortie ==
+
+{{{
+<!ELEMENT sentence (words) >
+
+<!ELEMENT words (word*) >
+
+<!ELEMENT word (form,pos+) >
+<!ATTLIST word
+          lex_id CDATA #REQUIRED >
+
+<!ELEMENT form (#PCDATA) >
+
+<!ELEMENT pos EMPTY >
+<!ATTLIST pos
+          type  CDATA #REQUIRED >
+}}}
+
+== Historique des révisions ==
+
+|| *Date* || *Version* || *URL* ||
+||2006/11/22||0.4||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.4.tar.gz maca_hmm_tagger-0.4.tar.gz]||
+||2006/11/20||0.3||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.3.tar.gz maca_hmm_tagger-0.3.tar.gz]||
+||2006/11/15||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.2.tar.gz maca_hmm_tagger-0.2.tar.gz]||
+||2006/09/27||0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/tagger-0.tar.gz tagger-0.tar.gz]||
+
+
+
+
+
+
