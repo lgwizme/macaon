@@ -8,7 +8,7 @@ Découpe les phrases d'un document en unités indivisibles.
 
 || *Responsable* ||AlejandroAcosta||
 || *Langage* ||C/Python||
-|| *Dernière version* ||1.2.1||
+|| *Dernière version* ||1.2.2||
 || *Date* ||2007/02/09||
 || *URL* ||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_tokenizer-1.2.2.tar.gz maca_tokenizer-1.2.2]||
 
