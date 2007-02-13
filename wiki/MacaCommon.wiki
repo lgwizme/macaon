@@ -1,0 +1,27 @@
+#summary Librairie de structures de données C.
+
+*Voir aussi :* InstallationDeMacaon
+
+== Introduction ==
+
+Cette librairie est utilisé par plusieurs modules macaon
+
+|| *Responsable* ||AlexisNasr||
+|| *Langage* ||C||
+|| *Dernière version* ||0.3||
+|| *Date* ||2006/11/22||
+|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_common-0.3.tar.gz maca_common-0.3]||
+
+== Dépendances ==
+ * Librairies et programmes externes
+   * [http://www.gtk.org/ glib2]
+   * [http://www.gnu.org/software/libtool/ libtool]
+
+== Historique des révisions ==
+
+|| *Date* || *Version* || *URL* ||
+||2006/11/22||0.3||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_common-0.3.tar.gz maca_common-0.3.tar.gz]||
+||2006/11/15||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_common-0.2.tar.gz maca_common-0.2.tar.gz]||
+||2006/09/27||0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/common-0.tar.gz common-0.tar.gz]||
+
+
