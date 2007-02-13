@@ -1,7 +1,8 @@
 #summary Module d'analyse syntaxique partielle.
 
+*Voir aussi :* InstallationDeMacaon, TagsetChunker, GrammairesChunker
+
 =maca_chunker=
-*Voir aussi :* TagsetChunker, GrammairesChunker
 
 Permet de définir et utiliser une cascade de transducteurs déterministes pour regrouper des symboles et construire une analyse syntaxique superficielle d'une séquence d'étiquettes morpho-syntaxiques.
 
@@ -94,7 +95,6 @@ Un document avec des phrases découpées en mots associés à des parties du dis
 ||2006/02/02||1.5||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.5.tar.gz chunker-1.5.tar.gz]||
 ||2005/10/27||1.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.1.tar.gz chunker-1.1.tar.gz]||
 ||2005/10/14||1.0||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/chunker-1.0.tar.gz chunker-1.0.tar.gz]||
-
 
 
 
