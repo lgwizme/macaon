@@ -1,4 +1,5 @@
-#summary Modules et librairies macaon, implémentés ou à implémenter
+#summary Librairies et modules macaon ; implémentés ou à implémenter.
+#labels Featured
 
 == Librairies ==
  * MacaCommon
