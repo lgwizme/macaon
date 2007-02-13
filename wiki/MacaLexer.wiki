@@ -80,12 +80,6 @@ OPTIONS :
 == Historique des révisions ==
 
 || *Date* || *Version* || *URL* ||
-||2006/11/20||0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.3.tar.gz maca_lexer-0.3.tar.gz]||
-||2006/11/15||0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.2.tar.gz maca_lexer-0.2.tar.gz]||
+||2006/11/20||0.3||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.3.tar.gz maca_lexer-0.3.tar.gz]||
+||2006/11/15||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.2.tar.gz maca_lexer-0.2.tar.gz]||
 ||2006/09/27||0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/lexer-0.tar.gz lexer-0.tar.gz]||
-
-
-
-
-
-
