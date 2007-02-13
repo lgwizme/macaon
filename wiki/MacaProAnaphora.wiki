@@ -1,4 +1,4 @@
-#summary Proposition d'un module de resolution des liens anaphoriques pronominaux.
+#summary Proposition d'un module de resolution de liens anaphoriques pronominaux.
 
 *Voir aussi :* ListeDeModules
 
@@ -67,6 +67,5 @@ foreach w in lw
 }   
 
 }}} 
-
 
 
