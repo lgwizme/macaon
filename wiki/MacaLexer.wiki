@@ -1,4 +1,4 @@
-#summary Regroupement des atomes en mots du dictionnaire.
+#summary Module de regroupement des atomes en mots.
 
 *Voir aussi :* InstallationDeMacaon, MacaCommon, MacaLex
  
