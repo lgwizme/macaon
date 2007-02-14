@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Description de la structure d'un document annoté par Macaon.
 
 = Introduction =
 
