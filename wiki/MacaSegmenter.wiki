@@ -54,6 +54,7 @@ the following tags:
 <!ATTLIST section
           analyze (YES|yes) #IMPLIED >
 }}}
+Avec l'option `-x` ce module accepte du texte (encodé en UTF-8) en entrée. 
 
 == Sortie ==
 Le texte des sections à analyser est découpé en paragraphes et phrases qui contient le texte dans des éléments 'text'.
@@ -77,7 +78,6 @@ Le texte des sections à analyser est découpé en paragraphes et phrases qui co
 ||2006/11/03||2.2||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/macasegmenter-2.2.tar.gz macasegmenter-2.2.tar.gz]||
 ||2006/09/27||2.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/segmenter-2.1.tar.gz segmenter-2.1.tar.gz]||
 ||2006/05/01||2||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/segmenter-2.tar.gz segmenter-2.tar.gz]||
-
 
 
 
