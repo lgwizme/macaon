@@ -36,4 +36,6 @@ NB. Dans tous les cas, faites bien attention à utiliser un encodage UTF-8.
 
 == Autres scripts installés ==
 
-à venir.
+Ces scripts ne font pas partie de Macaon :
+ * iule_xml_clean (enlève les retours à la ligne ajoutés dans les Elements Text traités avec libxml2)
+ * iule_xml_modify_structure (essayez, vous verez ce que ça fait après le tout)
