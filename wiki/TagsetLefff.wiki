@@ -18,12 +18,13 @@ Le jeu d'étiquettes de MacaHmmTagger provient du lexique des formes fléchis du
  * csu (conjonction de subordination)
  * clr (clitique réfléchi)
  * det
+ * etr (mot étranger)
  * nc (nom propre)
  * np (nom commun)
- * prorel (pronom relatif)
+ * prep
  * pri (pronom intérrogatif)
  * pro (pronom, tout court ?)
- * etr (mot étranger)
+ * prorel (pronom relatif)
  * vppart (participe passé)
  * vprespart (participe présent)
  * v (verbe fini)
@@ -32,5 +33,4 @@ Le jeu d'étiquettes de MacaHmmTagger provient du lexique des formes fléchis du
  * pres (interjection)
  * poncts
  * ponctw
-
 
