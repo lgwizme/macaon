@@ -25,11 +25,15 @@ Assurez vous que votre système possède les dépendances externes. Installez d'
   # MacaLex
   # MacaLexer
   # MacaHmmTagger
-  # MacaAnamorph
+  # MacaAnaMorph
   # MacaSegmenter
   # MacaTokenizer
   # [http://code.google.com/p/macaon/wiki/MacaNEMatcher MacaNEMatcher]
   # MacaChunker
+
+== Module par module ==
+
+Voici le sommaire des commandes d'installation pour chaque module. Notez qu'il y a des différences.
 
 === MacaCommon ===
 {{{
@@ -45,6 +49,8 @@ make
 make install
 }}}
 
+Des variables d'environement doivent être déclarées.
+
 === MacaLexer ===
 {{{
 ./configure
@@ -58,6 +64,8 @@ make install
 make
 make install
 }}}
+
+Des variables d'environement doivent être déclarées.
 
 === MacaAnamorph===
 {{{
@@ -86,6 +94,13 @@ make install
 }}}
 
 === MacaChunker===
+{{{
+./configure
+make
+make install
+}}}
+
+Si cela ne marche pas, essayez :
 {{{
 aclocal
 autoconf
