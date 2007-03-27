@@ -2,8 +2,9 @@
 
 = Introduction =
 
-Les modules s'installent séparément. Consultez la documentation de chaque module. 
+Les modules s'installent séparément. Pour avoir des informations plus completes il est parfois utile de consulter la discribution de chaque module. Les informations renseignées dans cette page ne sont que des pistes générales. 
 
+*Attention* : Sachiez que vous pouvez tomber sur des nombreuses complications pendant l'installation de la chaîne. Faites attention aux dépendances et n'hésitez pas à contacter les développeurs et/ou à ajouter des "[http://code.google.com/p/macaon/issues/list issues]".
 
 = Détails =
 
@@ -11,3 +12,84 @@ Voici un schéma de dépendances:
 
 [http://www.linguist.jussieu.fr/~aacosta/macaon/img/maca_dep.png]
 
+== Préinstallation ==
+
+Assurez vous que votre système possède les dépendances externes. Installez d'abord toute dépendance externe manquante. Pour l'instant, la chaîne à été installé avec succès sur les plate-formes: 
+  * linux : debian (sarge)
+  * osx : tiger (sur une machine powerpc avec XCode et MacPorts)
+
+== Ordre recommendé ==
+
+  # Vérification des dépendances
+  # MacaCommon
+  # MacaLex
+  # MacaLexer
+  # MacaHmmTagger
+  # MacaAnamorph
+  # MacaSegmenter
+  # MacaTokenizer
+  # [http://code.google.com/p/macaon/wiki/MacaNEMatcher MacaNEMatcher]
+  # MacaChunker
+
+=== MacaCommon ===
+{{{
+./configure
+make
+make install
+}}}
+
+=== MacaLex ===
+{{{
+./configure
+make
+make install
+}}}
+
+=== MacaLexer ===
+{{{
+./configure
+make
+make install
+}}}
+
+=== MacaHmmTagger ===
+{{{
+./configure
+make
+make install
+}}}
+
+=== MacaAnamorph===
+{{{
+./configure
+make
+make install
+}}}
+
+=== MacaSegmenter ===
+{{{
+./configure
+make
+make install
+}}}
+
+=== MacaTokenizer ===
+{{{
+make
+make install
+}}}
+
+=== MacaNEMatcher ===
+{{{
+make
+make install
+}}}
+
+=== MacaChunker===
+{{{
+aclocal
+autoconf
+./configure
+make
+make install
+}}}
