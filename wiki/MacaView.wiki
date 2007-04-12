@@ -1,4 +1,4 @@
-#summary La meilleure manière de "lire" un document MACAON
+#summary La meilleure manière de _lire_ un document MACAON
 
 = Introduction =
 
