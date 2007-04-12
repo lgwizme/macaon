@@ -38,4 +38,16 @@ NB. Dans tous les cas, faites bien attention à utiliser un encodage UTF-8.
 
 Ces scripts ne font pas partie de MACAON :
  * iule_xml_clean (enlève les retours à la ligne ajoutés dans les Elements Text traités avec libxml2)
- * iule_xml_modify_structure (essayez, vous verez ce que ça fait après le tout)
+{{{
+iule_xml_clean -i mon_fichier.xml -o resultat.xml
+}}}
+ * iule_xml_modify_structure (simplifie la lecture des documents cf. MacaView)
+{{{
+iule_xml_modify_structure -i mon_fichier.xml -o resultat.xml
+}}}
+ * iule_macaon_txt (est un pipe de `sh`, alors pas d'options)
+{{{
+cat mon_texte.txt | iule_macaon_txt > resultat.xml
+}}}
+
+
