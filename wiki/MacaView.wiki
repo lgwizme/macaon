@@ -21,7 +21,7 @@ Si vous utilisez un autre navigateur il est possible (c'est le cas pour Firefox,
   * Créez un document MACAON avec une feille de style.
      * Utilisez iule_xml_modify_structure, ou bien
      * Téléchargez [http://www.linguist.jussieu.fr/~aacosta/macaon/exemples/exemple-0.3.xml exemple-0.3.xml]
-  * Téléchargez [http://www.linguist.jussieu.fr/~aacosta/macaon/modules/ maca_view-1.0.tar.gz]
+  * Téléchargez [http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_view-1.0.tar.gz maca_view-1.0.tar.gz]
   * Décompressez maca_view dans le répertoire de vos fichiers MACAON (le résultat est un répertoire 'style')
   * Ouvrez un fichier MACAON avec votre navigateur
 
