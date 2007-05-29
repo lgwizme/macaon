@@ -19,7 +19,7 @@ Assurez vous que votre système possède les dépendances externes. Installez d'
   * osx : tiger (sur une machine powerpc avec XCode et MacPorts)
   * fedora : core 6
 
-== Ordre recommendé ==
+== Ordre recommandé ==
 
   # Vérification des dépendances
   # MacaCommon
