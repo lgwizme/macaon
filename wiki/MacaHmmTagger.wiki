@@ -9,8 +9,8 @@ Etiquetage morpho-syntaxique fondé sur un modele statistique trigramme.
 || *Responsable* ||AlexisNasr||
 || *Langage* ||C||
 || *Dernière version* ||0.4||
-|| *Date* ||2006/11/22||
-|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.7.tar.gz maca_hmm_tagger-0.4]||
+|| *Date* ||2007/05/28||
+|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.7.tar.gz maca_hmm_tagger-0.7]||
 
 === Dépendances ===
  * Librairies Macaon
@@ -67,7 +67,6 @@ OPTIONS :
 ||2006/11/20||0.3||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.3.tar.gz maca_hmm_tagger-0.3.tar.gz]||
 ||2006/11/15||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.2.tar.gz maca_hmm_tagger-0.2.tar.gz]||
 ||2006/09/27||0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/tagger-0.tar.gz tagger-0.tar.gz]||
-
 
 
 
