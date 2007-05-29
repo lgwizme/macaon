@@ -17,6 +17,7 @@ Voici un schéma de dépendances:
 Assurez vous que votre système possède les dépendances externes. Installez d'abord toute dépendance externe manquante. Pour l'instant, la chaîne à été installé avec succès sur les plate-formes: 
   * linux : debian (sarge)
   * osx : tiger (sur une machine powerpc avec XCode et MacPorts)
+  * fedora : core 6
 
 == Ordre recommendé ==
 
