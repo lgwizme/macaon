@@ -10,7 +10,7 @@ Ce module utilise le lefff et ajoute des traits morphologiques aux mots en fonct
 || *Langage* ||C||
 || *Dernière version* ||0.5||
 || *Date* ||28/05/2007||
-|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_anamorph-0.5.tar.gz maca_anamorph-0.3]||
+|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_anamorph-0.5.tar.gz maca_anamorph-0.5]||
 
 === Dépendances ===
  * Librairies Macaon
@@ -90,7 +90,6 @@ Le module ajoute à chaque <pos> des <word>s du lexique les <lemma>s associés e
 ||2006/11/20||0.3||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_anamorph-0.3.tar.gz maca_anamorph-0.3.tar.gz]||
 ||2006/11/15||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_anamorph-0.2.tar.gz maca_anamorph-0.2.tar.gz]||
 ||2006/09/27||0.0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/anamorph-0.tar.gz anamorph-0.tar.gz]||
-
 
 
 
