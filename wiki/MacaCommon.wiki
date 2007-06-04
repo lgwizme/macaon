@@ -8,9 +8,9 @@ Cette librairie est utilisée par plusieurs modules macaon
 
 || *Responsable* ||AlexisNasr||
 || *Langage* ||C||
-|| *Dernière version* ||0.3||
-|| *Date* ||2006/11/22||
-|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_common-0.3.tar.gz maca_common-0.3]||
+|| *Dernière version* ||0.6||
+|| *Date* ||2007/04/06||
+|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_common-0.6.tar.gz maca_common-0.6]||
 
 == Dépendances ==
  * Librairies et programmes externes
@@ -23,4 +23,3 @@ Cette librairie est utilisée par plusieurs modules macaon
 ||2006/11/22||0.3||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_common-0.3.tar.gz maca_common-0.3.tar.gz]||
 ||2006/11/15||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_common-0.2.tar.gz maca_common-0.2.tar.gz]||
 ||2006/09/27||0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/common-0.tar.gz common-0.tar.gz]||
-
