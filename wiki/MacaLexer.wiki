@@ -18,6 +18,7 @@ Regroupe les atomes en mots du lexique du lefff.
    * MacaLex 
  * Librairies et programmes externes
    * [http://xmlsoft.org/ libxml2]
+   * [http://www.gtk.org/ glib2]
 
 === Commande ===
 {{{
