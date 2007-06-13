@@ -87,10 +87,9 @@ Le module ajoute à chaque <pos> des <word>s du lexique les <lemma>s associés e
 == Historique des révisions ==
 
 || *Date* || *Version* || *URL* ||
-||2006/11/20||0.3||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_anamorph-0.3.tar.gz maca_anamorph-0.3.tar.gz]||
-||2006/11/15||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_anamorph-0.2.tar.gz maca_anamorph-0.2.tar.gz]||
-||2006/09/27||0.0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/anamorph-0.tar.gz anamorph-0.tar.gz]||
-
+||20/11/2006||0.3||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_anamorph-0.3.tar.gz maca_anamorph-0.3.tar.gz]||
+||15/11/2006||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_anamorph-0.2.tar.gz maca_anamorph-0.2.tar.gz]||
+||27/09/2006||0.0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/anamorph-0.tar.gz anamorph-0.tar.gz]||
 
 
 
