@@ -1,71 +1,51 @@
-#summary Proposition d'un module de resolution de liens anaphoriques pronominaux.
+#summary Module d'annotation des antécédents des pronoms anaphoriques.
 
-*Voir aussi :* ListeDeModules
+*Voir aussi :* ProjetMacaProAnaphora
+ 
+=maca_proanaphora=
 
-= maca_proanaphora =
+Ce module est en état d'expérimentation.
 
-Ce module calcule les liens entre un certain nombre de pronoms du français et leurs antécédents. *Le module n'a pas été implémenté.*
+|| *Responsable* ||PierreMagistry||
+|| *Langage* ||Python||
+|| *Dernière version* ||0.0||
+|| *Date* ||14/06/2007||
+|| *URL* ||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_proanaphora-0.0.tar.gz maca_proanaphora-0.0]||
 
-== Détails ==
+=== Dépendances ===
+ * Librairies Macaon
+   * ???
+ * Librairies et programmes externes
+   * ???
 
-AlejandroAcosta a présenté le 21.11.2006 au groupe anaphores du laboratoire Lattice son idée de spécification pour l'implémentation de ce module.
-
-Points pertinents:
- * Inspiration : Mitkov, Baldwin, Lappin et Leass, ...
- * Le calcul des liens entre les pronoms et leurs antécedents est fondé sur une mesure dite de "saillance" calculée sur les antécedents possibles.
- * La saillence est calculée en fonction d'un ensemble d'heuristiques qui analysent des annotation linguistiques, ou qui prennent en compte d'autres paramettres qui semblent pertinents, par exemple:
-   * fonction syntaxique
-   * traits morphologiques
-   * position dans une structure syntagmatique
-   * position dans une structure de dépendance
-   * forme fléchi
-   * rôle sémantique
-   * distance entre l'antécedent et le pronom
-   * distance entre le pronom et le début/fin de la phrase
-   * contexte de l'antécédent et du pronom (en parenthèse, entre guillemets)
-   * ...
- * L'ordre d'application des règles n'est pas important
- * Dans une implémentation qui suit un modèle orienté objet, les règles sont des sous-classes d'une classe abstraite qui contient une méthode "appliquer". Après l'implémentation du coeur du système, les règles peuvent être implémentés séparément, et activées ou déactivées facilement. 
-
-Voici un brouillon de l'algorithme central:
-
+=== Commande ===
 {{{
-Ensemble liens, scandidatS, scandidaT, regles
-Liste lp, lc, lw
-Document doc
-Window w
-Pronoun pro
-Candidate candidat
-Rule regle
-Score sr
-
-Liste getWindows(Document)
-Liste getPronouns(Liste)
-Liste getCandidates(Pronoun,Window)
-Score calculeScore(Ensemble)
-Candidat leBest(Ensemble)
-
-lw = getWindows(doc)
-foreach w in lw
-{
-  lp = getPronouns(w)
-  foreach pro in lp
-  {
-    lc = getCadidates(pro,w)
-    foreach cadidat in lc
-    {
-      foreach regle in regles
-      {
-        sr = regle.appliquer(doc,candidat,pro,...)
-        if (sr.break) break
-        else scandaidaT.add(sr)
-      }
-    }
-    scandidatS.add(calculeScore(scandidaT))
-  }
-  liens.add(pro,leBest(scandidatS))
-}   
+usage: maca_anamorph [options]
+OPTIONS :
+      -h            : print this message
+      -V            : show version
+      -i <file>     : xml input file
+      -o <file>     : xml output file (default is stdout)
+      -v            : verbose mode
 
 }}} 
+
+== Entrée ==
+{{{
+Description en syntaxe DTD des éléments d'un document macaon qui sont utilisés par le module.       
+}}}
+
+== Sortie ==
+Le module ajoute à chaque <pos> des <word>s du lexique les <lemma>s associés et les trait morphologiques correspondants. 
+{{{
+Comme le précédent, plus les éléments qui sont ajoutés par le module en sortie.
+}}}
+
+== Historique des révisions ==
+
+|| *Date* || *Version* || *URL* ||
+||14/16/2007||0.0||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_proanaphora-0.0.tar.gz maca_proanaphora-0.0]||
+
+
 
 
