@@ -20,7 +20,7 @@ Ce module est en état d'expérimentation.
 
 === Commande ===
 {{{
-usage: maca_anamorph [options]
+usage: maca_proanaphora [options]
 OPTIONS :
       -h            : print this message
       -V            : show version
@@ -45,7 +45,6 @@ Comme le précédent, plus les éléments qui sont ajoutés par le module en sor
 
 || *Date* || *Version* || *URL* ||
 ||14/16/2007||0.0||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_proanaphora-0.0.tar.gz maca_proanaphora-0.0]||
-
 
 
 
