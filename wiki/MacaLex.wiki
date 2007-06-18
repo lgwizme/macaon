@@ -8,9 +8,9 @@ Cette librairie est utilisée par plusieurs modules macaon
 
 || *Responsable* ||AlexisNasr||
 || *Langage* ||C||
-|| *Dernière version* ||0.6||
-|| *Date* ||12/06/2007||
-|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.6.tar.gz maca_lex-0.6]||
+|| *Dernière version* ||0.8||
+|| *Date* ||18/06/2007||
+|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.8.tar.gz maca_lex-0.8]||
 
 == Dépendances ==
  * Librairies Macaon
@@ -27,5 +27,4 @@ Cette librairie est utilisée par plusieurs modules macaon
 ||15/11/2006||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.2.tar.gz maca_lex-0.2.tar.gz]||
 ||13/10/2006||0.0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.0.tar.gz maca_lex-0.0.tar.gz]||
 ||27/09/2006||MacaDicoFF||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/dico_ff-0.tar.gz dico_ff-0.tar.gz]||
-
 
