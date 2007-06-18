@@ -8,9 +8,9 @@ Regroupe les atomes en mots du lexique du lefff.
 
 || *Responsable* ||AlexisNasr||
 || *Langage* ||C||
-|| *Dernière version* ||0.5||
-|| *Date* ||28/05/2007||
-|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.5.tar.gz maca_lexer-0.5]||
+|| *Dernière version* ||0.6||
+|| *Date* ||18/06/2007||
+|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.6.tar.gz maca_lexer-0.6]||
 
 === Dépendances ===
  * Librairies Macaon
