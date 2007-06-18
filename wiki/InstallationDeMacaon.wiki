@@ -15,9 +15,9 @@ Voici un schéma de dépendances:
 == Préinstallation ==
 
 Assurez vous que votre système possède les dépendances externes. Installez d'abord toute dépendance externe manquante. Pour l'instant, la chaîne à été installé avec succès sur les plate-formes: 
-  * linux : debian (sarge)
+  * linux : debian (sarge), fedora (core 6), centOS5
   * osx : tiger (sur une machine powerpc avec XCode et MacPorts)
-  * fedora : core 6
+  * unix : FreeBSD (6.2)
 
 == Ordre recommandé ==
 
