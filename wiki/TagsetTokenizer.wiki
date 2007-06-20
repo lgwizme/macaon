@@ -14,12 +14,11 @@ Le jeu d'étiquettes de MacaTokenizer correspond aux différents types d'atomes 
  * initial: eg. A.
  * acronym : eg. I.B.M.
  * hyphen : -
- * wpunct : [,;:"'(){}«»&’]
- * spunct : ([.!?¿¡]+|-)
+ * ponctw : [,;:"'(){}«»&’]
+ * poncts : ([.!?¿¡]+|-)
  * symbol
  * sgmltag
  * email
  * url
  * space
-
 
