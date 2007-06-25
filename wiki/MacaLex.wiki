@@ -24,7 +24,10 @@ Cette librairie est utilisée par plusieurs modules macaon
 == Historique des révisions ==
 
 || *Date* || *Version* || *URL* ||
+||18/06/2007||0.8||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.8.tar.gz maca_lex-0.8.tar.gz]||
+||12/06/2007||0.6||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.6.tar.gz maca_lex-0.6.tar.gz]||
+||04/06/2007||0.5||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.5.tar.gz maca_lex-0.5.tar.gz]||
+||28/05/2007||0.4||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.4.tar.gz maca_lex-0.4.tar.gz]||
 ||15/11/2006||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.2.tar.gz maca_lex-0.2.tar.gz]||
 ||13/10/2006||0.0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.0.tar.gz maca_lex-0.0.tar.gz]||
 ||27/09/2006||MacaDicoFF||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/dico_ff-0.tar.gz dico_ff-0.tar.gz]||
-
