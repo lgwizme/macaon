@@ -8,9 +8,9 @@ Regroupe les atomes en mots du lexique du lefff.
 
 || *Responsable* ||AlexisNasr||
 || *Langage* ||C||
-|| *Dernière version* ||0.7||
-|| *Date* ||22/06/2007||
-|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.7.tar.gz maca_lexer-0.7]||
+|| *Dernière version* ||0.8||
+|| *Date* ||25/06/2007||
+|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.8.tar.gz maca_lexer-0.8]||
 
 === Dépendances ===
  * Librairies Macaon
@@ -81,6 +81,10 @@ OPTIONS :
 == Historique des révisions ==
 
 || *Date* || *Version* || *URL* ||
+||25/06/2007||0.8||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.8.tar.gz maca_lexer-0.8.tar.gz]||
+||22/06/2007||0.7||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.7.tar.gz maca_lexer-0.7.tar.gz]||
+||18/06/2007||0.6||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.6.tar.gz maca_lexer-0.6.tar.gz]||
+||28/05/2007||0.5||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.5.tar.gz maca_lexer-0.5.tar.gz]||
 ||20/11/2006||0.3||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.3.tar.gz maca_lexer-0.3.tar.gz]||
 ||15/11/2006||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lexer-0.2.tar.gz maca_lexer-0.2.tar.gz]||
 ||27/09/2006||0||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/lexer-0.tar.gz lexer-0.tar.gz]||
