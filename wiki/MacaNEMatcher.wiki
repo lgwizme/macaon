@@ -8,7 +8,7 @@ Utilise  des expressions régulières et des dictionnaires fournis par l'utilisa
 
 || *Responsable* ||AlejandroAcosta||
 || *Langage* ||Python||
-|| *Dernière version* ||1.6||
+|| *Dernière version* ||1.7||
 || *Date* ||26/06/2007||
 || *URL* ||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_nematcher-1.7.tar.gz maca_nematcher-1.7]||
 
