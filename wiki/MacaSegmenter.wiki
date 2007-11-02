@@ -8,9 +8,9 @@ Découpage d'un document en paragraphes et phrases. A partir de la version 2.3 c
 
 || *Responsable* ||AlejandroAcosta||
 || *Langage* ||C++||
-|| *Dernière version* ||2.4||
-|| *Date* ||2006/12/20||
-|| *URL* ||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_segmenter-2.4.tar.gz maca_segmenter-2.4.tar.gz]||
+|| *Dernière version* ||2.5||
+|| *Date* ||10/31/2007||
+|| *URL* ||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_segmenter-2.5.tar.gz maca_segmenter-2.5.tar.gz]||
 
 === Dépendances ===
  * Librairies et programmes externes
@@ -73,11 +73,10 @@ Le texte des sections à analyser est découpé en paragraphes et phrases qui co
 == Historique des révisions ==
 
 || *Date* || * Version* || *URL* ||
+||2007/10/31||2.5||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_segmenter-2.5.tar.gz maca_segmenter-2.5.tar.gz]||
 ||2006/12/20||2.4||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_segmenter-2.4.tar.gz maca_segmenter-2.4.tar.gz]||
 ||2006/11/10||2.3||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/macasegmenter-2.3.tar.gz macasegmenter-2.3.tar.gz]||
 ||2006/11/03||2.2||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/macasegmenter-2.2.tar.gz macasegmenter-2.2.tar.gz]||
 ||2006/09/27||2.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/segmenter-2.1.tar.gz segmenter-2.1.tar.gz]||
 ||2006/05/01||2||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/segmenter-2.tar.gz segmenter-2.tar.gz]||
-
-
 
