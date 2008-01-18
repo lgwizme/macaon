@@ -8,9 +8,9 @@ Utilise  des expressions régulières et des dictionnaires fournis par l'utilisa
 
 || *Responsable* ||AlejandroAcosta||
 || *Langage* ||Python||
-|| *Dernière version* ||1.8||
-|| *Date* ||20/09/2007||
-|| *URL* ||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_nematcher-1.8.tar.gz maca_nematcher-1.8]||
+|| *Dernière version* ||2.0||
+|| *Date* ||18/01/2008||
+|| *URL* ||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_nematcher-2.0.tar.gz maca_nematcher-2.0]||
 
 L'accès à un dictionnaire dans une base de données MySQL n'est pas encore configurable en ligne de commande et restera cachée jusqu'à ce qu'elle puisse être mieux implémentée. 
 
@@ -71,6 +71,7 @@ Les séquences de <token>s reconnues comme entités nommées sont rangées dans 
 == Historique des révisions ==
 
 || *Date* || *Version* || *URL* ||
+||18/01/2008||2.0||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_nematcher-2.0.tar.gz maca_nematcher-2.0.tar.gz]||
 ||20/09/2007||1.8||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_nematcher-1.8.tar.gz maca_nematcher-1.8.tar.gz]||
 ||09/07/2007||1.7.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_nematcher-1.7.1.tar.gz maca_nematcher-1.7.1.tar.gz]||
 ||26/06/2007||1.7||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_nematcher-1.7.tar.gz maca_nematcher-1.7.tar.gz]||
