@@ -50,8 +50,6 @@ make
 make install
 }}}
 
-Des variables d'environement doivent être déclarées.
-
 === MacaLexer ===
 {{{
 ./configure
@@ -65,8 +63,6 @@ make install
 make
 make install
 }}}
-
-Des variables d'environement doivent être déclarées.
 
 === MacaAnamorph===
 {{{
