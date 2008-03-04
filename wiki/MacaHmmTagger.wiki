@@ -8,9 +8,9 @@ Etiquetage morpho-syntaxique fondé sur un modele statistique trigramme.
 
 || *Responsable* ||AlexisNasr||
 || *Langage* ||C||
-|| *Dernière version* ||0.11||
-|| *Date* ||10/09/2007||
-|| *URL* ||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.11.tar.gz maca_hmm_tagger-0.11]||
+|| *Dernière version* ||0.14||
+|| *Date* ||26/11/2007||
+|| *URL* ||[http://pageperso.lif.univ-mrs.fr/~alexis.nasr/macaon/maca_hmm_tagger-0.14.tar.gz maca_hmm_tagger-0.14.tar.gz]||
 
 === Dépendances ===
  * Librairies Macaon
@@ -64,6 +64,10 @@ OPTIONS :
 == Historique des révisions ==
 
 || *Date* || *Version* || *URL* ||
+||26/11/2007||0.14||[http://pageperso.lif.univ-mrs.fr/~alexis.nasr/macaon/maca_hmm_tagger-0.14.tar.gz maca_hmm_tagger-0.14.tar.gz]||
+||06/11/2007||0.13||[http://pageperso.lif.univ-mrs.fr/~alexis.nasr/macaon/maca_hmm_tagger-0.13.tar.gz maca_hmm_tagger-0.13.tar.gz]||
+||25/09/2007||0.12||[http://pageperso.lif.univ-mrs.fr/~alexis.nasr/macaon/maca_hmm_tagger-0.12.tar.gz maca_hmm_tagger-0.12.tar.gz]||
+||10/09/2007||0.11||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.11.tar.gz maca_hmm_tagger-0.11.tar.gz]||
 ||22/11/2006||0.4||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.4.tar.gz maca_hmm_tagger-0.4.tar.gz]||
 ||20/11/2006||0.3||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.3.tar.gz maca_hmm_tagger-0.3.tar.gz]||
 ||15/11/2006||0.2||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_hmm_tagger-0.2.tar.gz maca_hmm_tagger-0.2.tar.gz]||
