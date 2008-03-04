@@ -24,6 +24,28 @@ Cette librairie est utilisée par plusieurs modules macaon
 == Historique des révisions ==
 
 || *Date* || *Version* || *URL* ||
+
+Cette librairie est utilisée par plusieurs modules macaon
+
+|| *Responsable* ||AlexisNasr||
+|| *Langage* ||C||
+|| *Dernière version* ||0.9||
+|| *Date* ||17/10/2007||
+|| *URL* ||[http://pageperso.lif.univ-mrs.fr/~alexis.nasr/macaon/maca_lex-0.9.tar.gz maca_lex-0.9]||
+
+== Dépendances ==
+ * Librairies Macaon
+   * MacaCommon
+ * Librairies et programmes externes
+   * [http://www.gtk.org/ glib2]
+   * [http://www.gnu.org/software/libtool/ libtool]
+ * Ressources externes
+   * [http://www.labri.fr/perso/clement/lefff/ lefff]
+
+== Historique des révisions ==
+
+|| *Date* || *Version* || *URL* ||
+||17/10/2007||0.9||[http://pageperso.lif.univ-mrs.fr/~alexis.nasr/macaon/maca_lex-0.9.tar.gz maca_lex-0.9.tar.gz]||
 ||18/06/2007||0.8||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.8.tar.gz maca_lex-0.8.tar.gz]||
 ||12/06/2007||0.6||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.6.tar.gz maca_lex-0.6.tar.gz]||
 ||04/06/2007||0.5||[http://www.lif-sud.univ-mrs.fr/~nasr/macaon/maca_lex-0.5.tar.gz maca_lex-0.5.tar.gz]||
