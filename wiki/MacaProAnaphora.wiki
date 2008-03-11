@@ -44,7 +44,5 @@ Comme le précédent, plus les éléments qui sont ajoutés par le module en sor
 == Historique des révisions ==
 
 || *Date* || *Version* || *URL* ||
-||14/16/2007||0.0||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_proanaphora-0.0.tar.gz maca_proanaphora-0.0]||
-
-
+||14/06/2007||0.0||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_proanaphora-0.0.tar.gz maca_proanaphora-0.0]||
 
