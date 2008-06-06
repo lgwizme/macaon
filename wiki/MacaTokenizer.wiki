@@ -8,9 +8,9 @@ Découpe les phrases d'un document en unités indivisibles.
 
 || *Responsable* ||AlejandroAcosta||
 || *Langage* ||C/Python||
-|| *Dernière version* ||1.6||
-|| *Date* ||05/02/2008||
-|| *URL* ||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_tokenizer-1.6.tar.gz maca_tokenizer-1.6]||
+|| *Dernière version* ||1.7||
+|| *Date* ||05/06/2008||
+|| *URL* ||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_tokenizer-1.7.tar.gz maca_tokenizer-1.7]||
 
 Avec l'installation de ce module, la librarie python 'pytok', contenant une seule fonction: 'lex' est aussi installée.
 
@@ -18,7 +18,7 @@ Avec l'installation de ce module, la librarie python 'pytok', contenant une seul
  * Librairies et programmes externes
    * python-dev
    * [http://flex.sourceforge.net/ flex]
-   * [http://pyxml.sourceforge.net/ PyXML]
+   * [http://pyxml.sourceforge.net/ PyXML] (optionelle)
 
 === Commande ===
 {{{
@@ -75,6 +75,7 @@ Le tokenizer ajoute une liste de <token>s  typés dans un élément <tokens> qui
 == Historique des révisions ==
 
 || *Date* || *Version* || *URL* ||
+||2008/06/05||1.7||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_tokenizer-1.7.tar.gz maca_tokenizer-1.7.tar.gz]||
 ||2008/02/05||1.6||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_tokenizer-1.6.tar.gz maca_tokenizer-1.6.tar.gz]||
 ||2007/10/16||1.5.2||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_tokenizer-1.5.2.tar.gz maca_tokenizer-1.5.2.tar.gz]||
 ||2007/09/18||1.5.1||[http://www.linguist.jussieu.fr/~aacosta/macaon/modules/maca_tokenizer-1.5.1.tar.gz maca_tokenizer-1.5.1.tar.gz]||
