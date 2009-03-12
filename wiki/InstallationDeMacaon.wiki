@@ -10,7 +10,7 @@ Les modules s'installent séparément. Pour avoir des informations plus complete
 
 Voici un schéma de dépendances:
 
-[http://www.linguist.jussieu.fr/~aacosta/macaon/img/maca_dep.png]
+[http://farm4.static.flickr.com/3662/3348352756_358b17521e_o.png]
 
 == Préinstallation ==
 
