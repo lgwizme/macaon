@@ -23,13 +23,12 @@
 
 XERCES_CPP_NAMESPACE_USE
 
-class XMLInterface : public DOMErrorHandler
-{
+class XMLInterface : public DOMErrorHandler {
 private:
-  DOMBuilder* parser;
-  DOMWriter* serializer;
+  DOMLSParser* parser;
+  DOMLSSerializer* serializer;
   bool verbose;
- 
+
 protected:
   XMLInterface(const XMLInterface&); // Blocks "pass by value"
 public:
@@ -47,8 +46,8 @@ public:
 private:
   bool initialize();
   bool terminate();
-  DOMWriter* createSerializer();
-  DOMBuilder* createParser();
+  DOMLSSerializer* createSerializer();
+  DOMLSParser* createParser();
 };
 
 #endif // _XML_INTERFACE
