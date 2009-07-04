@@ -1,0 +1,281 @@
+2007-10-24  Alejandro Acosta  <araleius@gmail.com>
+
+	* configure.ac: 
+	Version 2.5
+
+	* src/StreamSegmenter.cpp:
+	- parseLine
+	  - ajout du traitement des guillets ouverts ou fermes en fin de phrase
+	    (cf. Il a dit : " Je l'aime. " Puis, une autre phrase.)
+	  - ajout de quelques messages pour le mode verbose
+
+2006-12-20  Alejandro Acosta  <araleius@gmail.com>
+
+	* INSTALL: 
+	- reecriture sous le modele de nematcher
+	- ajout d'une version en francais au debut
+
+2006-12-17  Alejandro Acosta  <araleius@gmail.com>
+
+	* configure.ac: 
+	Version 2.4
+
+	* src/StreamSegmenter.cpp: 
+	- includes Version.h in order to
+	- define _PREFIX_
+	  - modified verbose to use _PREFIX_
+	  - modified warnings to use _PREFIX_
+
+	* src/main.cpp: 
+	- added _PREFIX_ 
+	  - modified warnings to use _PREFIX_
+	  - modified verbose mode to use _PREFIX_
+
+2006-12-16  Alejandro Acosta  <araleius@gmail.com>
+
+	* configure.ac: 
+	package name maca_segmanter
+
+	* src/Makefile.am: 
+	bin_PROGRAMS -> maca_segmenter
+	macasegmenter_SOURCES -> maca_segmenter_SOURCES
+	
+	* src/main.cpp: 
+	(main)
+	- added 'setlocale(LC_CTYPE, "")' to begining of main function
+
+	(usage)
+	- replaced package name with _INSTALLED_NAME_
+	- started RCS version control
+
+	(stampDocument)
+	- macaX -> maca_X
+
+	(xercesReadStdinProblemWorkaround)
+	- REMOVED (is now internal to  XMLInterface->parse())
+
+	* src/scripts/Makefile.am: 
+	- Now passes package name to createVersionH.sh
+
+	* src/scripts/createVersionH.sh: 
+	- added _INSTALLED_NAME_: the exectuable name to use in main
+
+	* src/main.cpp (_ID_PREFIX_SENTENCE): 
+
+2006-11-24  Alejandro Acosta  <araleius@gmail.com>
+
+	* src/main.cpp: 
+	(version)
+	- NAME vX.X -> NAME version X.X
+
+2006-11-09  Alejandro Acosta  <araleius@gmail.com>
+
+	* include/StreamSegmenter.h: 
+	(unsigned int):
+	- replaced 'unsinged int's in signatures with 'string::size_type'.
+
+	* src/StreamSegmenter.cpp
+	(pos):
+	- all line pos are now of 'string::size_type' type instead of
+	'unsigned int'.
+	
+	(isBoundary):
+	- Added an exception catch for any string buffer out of boundings,
+	which shouldn't happen any more.
+	
+	(parseLine):
+	- replaced automatic pos++ to ignore space following boundary with
+	a new function: 'trim'.
+	- when a boundary is found, it now checks to see if it's followd
+	by more boundary characters or space before looping.
+
+	(trim):
+	- trims space at the end of lines.
+
+2006-11-08  Alejandro Acosta  <aacosta@linguist.jussieu.fr>
+
+	* configure.ac: Version 2.3
+	- removed the beta flag
+
+	* src/StreamSegmenter.cpp: 
+	(describe):
+	- Dictionary is printed out in the same format accepted as input.
+
+	* TESTS:
+	- Everything seems to work as expected.
+
+2006-11-08  Alejandro Acosta  <araleius@gmail.com>
+
+	* src/main.cpp 
+	(handleDocument):
+	- Modified id scheme for xml Elements:
+	  - section # paragraph # sentence # = sn#p#s#
+	  
+	(addSegmentedParagraphToSection):
+	- Changed signature, based on the new id scheme (requires a char*
+	with paragraph signature prefix, instead of pointers to int
+	counters)
+
+2006-11-07  Alejandro Acosta  <aacosta@linguist.jussieu.fr>
+
+	* configure.ac: Version 2.3b
+	- beta until more tests are performed.
+
+	* src/XMLInterface.cpp include/XMLInterface.hh: 
+	- Added to module (from chunker)
+
+	* src/main.cpp
+	- Promoted to global variables:
+	  - xmlinterface
+	  - seg
+	  - affectedSections
+	  - verbose
+	  - stamp
+	
+	(handleFile): 
+	- The function called after options are read from the command
+	line, it checks the mode (xml2xml, txt2txt, txt2xml) and proceeds
+	accordingly.
+	- When creating a new DOMDocument the structure is:
+	  <document>
+	    <contents>
+	      <body>
+	        <section analyze="yes">SEGMENTED DATA</section>
+	      </body>
+	    </contents>
+	  </document>
+
+	(handleDocument):
+	- Replaces the heart of the main function in previous version. It
+	handles the segmentation of a DOMDocument (from input or created
+	by txt2xml mode)
+
+	(getFileContents):
+	- Added this function to read txt input from a file or stdin
+	before creating a segmentated DOM document. All the text is read.
+
+	(usage):
+	- updated accordingly
+
+	* TODO:
+	- XMLInterface
+	- Prepare for batch mode
+	- Create XML document text mode option
+
+	* archived
+	- segmenter_segmenter-2(Nov 7 2006 15h04).tgz
+
+2006-11-03  Alejandro Acosta  <aacosta@linguist.jussieu.fr>
+
+	* TOUT: Version 2.2
+
+	* ADDED
+	- COPYING
+	- INSTALL
+	- GPL License headers to all src files
+
+	* configure.ac:
+	- Added src/scripts/Makefile to config file list in order to
+	create that Makefile with automake.
+	- Removed VERSION and VERSION export to acces version number in
+	createVersionH.sh, I discovered that PACKAGE_VERSION is already
+	exported by configure.ac so I can call it instead of creating my
+	own.
+
+2006-11-02  Alejandro Acosta  <araleius@gmail.com>
+
+	* src/xmlmain.cpp: 
+	(parseFile) 
+	- Cleaned the broken code for reading stdin and left a comment
+	with the xerces bug report number.
+	- added [ERR] prefix to error messages
+	(serializeDocumentTo)
+	- added [ERR] prefix to error messages
+	(main)
+	- replaced adhoc option parsing with getopt
+	- updated options
+	- removed mode selection: xml is default
+	- modified verbose mode printouts
+	- changed name to src/main.cpp
+
+	* include/StreamSegmenter.h: 	
+	- changed macro name _LINE_BOUNDARY_ to _SS_LINE_BOUNDARY_
+	- reset default tags for text mode to <paragrah><sentence>
+
+	* src/scripts/createVersionH.sh: 
+	- copied this script from chunker (v2.1) project
+
+	* TODO: lire stdin pour parser le document d'input reste quelque
+	chose à ressoudre plus tard: j'ai passé quelques heures sur google
+	et apache et des forums à le recherche d'un workaround en xerces
+	ou en c++ mais je n'ai rien trouvé.
+
+2006-11-01  Alejandro Acosta  <araleius@gmail.com>
+
+	* include/DefaultDict.h 
+	(dd_array4): added 'Doss'
+	(dd_array3): added 'Mun', 'Cit'
+	
+
+2006-09-29  alejandro acosta  <aacosta@linguist.jussieu.fr>
+
+	* TODO: Added this file
+
+	* TOUT: Version 2.1 (segementer)
+
+	* src/xmlmain.cpp:
+	(getTimestamp): renovie un char* ctime()
+	(stampDocument): verifie si l'Element <meta> existe. S'il n'existe
+	pas il est cree. Un Element <stamp> est ajoute avec un timestamp
+	du traitement par ce module.
+	(main): modif du usage
+
+2006-05-01  Alejandro Acosta  <araleius@gmail.com>
+
+	* TOUT: Version 2. (segementer)
+
+	* src/xmlmain.cpp: 
+	C'est le seul main qui existe maintenant, et qui permet de choisir
+	le mode d'execution, soit txt (avec stdin et stdout), soit xml.
+
+	* src/StreamSegmenter.cpp:
+	~ J'ai essaye d'ajouter une fonction instertToSets, qui ajouterait
+	des mots aux ensembles en fonciton de leur longueurs, mais le
+	smots a deux caracteres dont un accentue, on ete interpretes comme
+	des mots a trois caracteres. Je dois en fait verifier que ces
+	relges s'appliquent correctement.
+	+ ajout de 'verbose' et d'une foncition qui met cette variable en
+	true pour afficher des messages.
+	~ j'ai modifie l'affichage de trace du traitement.
+	
+	* include/DefaultDict.h: C'est le nouveau fichier de dictionnaire
+	qui definit le dicitonnaire par defaut. Il contient pour l'instant
+	36 mots.
+
+	* src/xmlmain.cpp:
+	~ modifie les options: 'verbose' est maintenant une option et
+	passe par main et par le StreamSegementer.
+	~ un dictionnaire est utilise par defaut, il es definit comme un
+	tableau dans include/DefaltDict.h. Lesoptions permetten de
+	rajouter un fichier de dictionnaire ou de remplacer celui par
+	defaut avec un autre.
+	PERSISTENCE: du probleme de lexture de STDIN avec baba.
+
+12.09: Verifie sur Baba. la numerotation des prhases finctionne correctement.
+
+12.05: Creo que hice lo necesario para resolver el asunto de los IDs XML de los elementos sentence. No pude probarlo porque estoy en el laboratorio y aca el progama sirve para tres cosas. tengo que revisarlo en Baba.
+
+11.25:	Contradiccion: BABA opina que no sabe como leer stdin. Cuando parseo stdin y trato de crear un documento DOM el resultado es NULL. Pero, BABA opina que si sabe que hacer cuando en xmlmain.cpp llamo section->getTextContent(). IXCZ en cambio, no tiene problemas para leer de stdin, pero a la hora de extraer el contenido textual de una seccion, asi el nodo sea section->normalize()d (lo cual ni deberia ser necesario porque todo el contenido textual esta en un solo nodo que es ademas del nivel inmediatamente inferior), cuando trato de capturar el texto el resultado es "", nada. PICPUS ibid.
+
+11.24:	La nueva version esta dividida un poco como el chunker. El Makefile crea dos  programas sentenceFinder y xmlSentenceFinder. La version XML utiliza xerces y  genera <paragraph><sentence><text>. Por el momento, las unicas opciones activas  al lanzar el programa son -d (diccionario) y -f (archivo para segmentar)
+ BUG: En la version XML, no he logrado que pueda leer desde stdin un doc xml. Ademas parece que se comporta de manera diferente en baba y en el laboratorio,  puede ser debido a la diferencia de version de xerces (2.7baba, 2.6&2.5labo) pero me parece igual extrano.
+
+11.22:	MODIFS: Modifique las cosas para que ahora no sea un archivo que se segmenta hacia stdout sino mas bien un stream que se segmenta hacia otro stream. Eso permite que se pueda luego usar la clase StreamSegmenter para una version que haga las cosas con XML. Tambien trate de modificar el USAGE y de actualizar la doc que imprime.  Ahora esta como mejor, claro que no es que pueda decir que es maravilloso.
+ Los diccionarios de abreviaciones ahora no estan en main sino que deben cargarse en ligne de commande a la hora de lanzar el programa. Cree un diccionario 'dico' que contiene las palabras que estaban antes en el main.cpp
+
+11.21: REPRISE (11/21/2005): No habia un ChangeLog para este programa: MAL entonces lo creo. La verdad es que no inclui nada de documentacion para esto y que me toca reentenderlo.
+ Este programa espera un archivo con texto libre (del corpus Maitron, sobretodo) y que puede contenter tags interiores que se ignoran sencillamente a la hora de hacer el tratamiento.
+ Los diccionarios de palabras especiales que se consideran en las heristicas de  segmentacion estan hardcoded en main.cpp.
+ Por que modificar? Porque ahora necesito usarlo para cortar las frases de un docu mento en xml, un documento con secciones que continen texto que debe ser segmentado en frases. Tipo: <doc><section>bla bla bla<sec><doc>
+ Otras consideraciones 1. Tengo que hacer un USAGE mas interesante que "prog [options] file" sin decir ni siquiera cuales son las opciones. 2. Separarlo en dos proyectos sentenceFinder y xmlSentenceFinder (y copiar esta  entrada del ChangeLog al proyecto inicial) 3. Crear la posiblidad (si no es par defaut) de leer la definicion de los dicciona rios que definien las palabras de X caracteres utilizadas en las heuristicas.
+ 
