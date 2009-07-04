@@ -1,0 +1,72 @@
+# segementer.INSTALL
+# AA 2006/11/03
+# MODIFIED 2006/12/19
+
+FR
+
+* Pour installer:
+
+- verifiez que votre systeme comporte
+  - la librairie xml xerces-c de apache
+
+- lancez:
+
+$ ./configure
+$ make
+$ make install
+
+NB. Vous devez avoir des droits d'administrateur pour installer le module
+
+* Premiere utilisation:
+
+$ maca_segmenter -h
+
+* SANS installation:
+
+Si vous ne souhaitez pas installer l'executable mais vous voulez y avoir acces,
+il se trouve dans le repertoire src/ sous le nom de 'maca_segmenter' apres de
+lancer make.
+
+* options de configure:
+
+N'oubliez pas de donner les options de configuration necessaires, sur tout si
+les librairies necessaires ne sont pas installees dans des repertoires
+standard. Par exemple, pour configurer sous macosx avec uns installation
+MacPorts (DarwinPorts) de xerces-c:
+
+LDFLAGS=-L/opt/local/lib CPPFLAGS=-I/opt/local/include ./configure
+
+
+EN
+
+* To install:
+
+- check the presence of the following dependencies in your system
+  - apache xerces-c xml library
+
+- run:
+
+$ ./configure
+$ make
+$ make install
+
+NOTE: to make install you must have admin rights.
+
+* First use:
+
+$ maca_segmenter -h
+
+* NOT installing:
+
+If you don't want to install you may use the executable written to the src/
+directory ("maca_segmenter") after running make (without running make install).
+
+* configure options:
+
+Don't forget to set configure flags appropiately if any of the required
+libraries is installed in a non-standard location. eg. to configure on a macosx
+with a MacPorts (DrawinPorts) installation of xerces-c:
+
+LDFLAGS=-L/opt/local/lib CPPFLAGS=-I/opt/local/include ./configure
+
+
