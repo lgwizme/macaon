@@ -130,7 +130,7 @@ DOMDocument* XMLInterface::createDocument(char* elementNodeName)
       // (Namespace, root element name, DTD)
       out = impl->createDocument(0,XMLString::transcode(elementNodeName),0);
       // WAR: Experimental XERCES-C function, might break
-      out->setStandalone(true);
+      out->setXmlStandalone(true);
     } catch (const OutOfMemoryException&) {
       cerr << _PREFIX_ << "ERROR Out of memory creating DOM Document" << endl;
     } catch (const DOMException& toCatch) {
@@ -149,6 +149,11 @@ bool XMLInterface::serializeTo(DOMDocument* doc,char* file)
   try {
     string thestdout = "<STDOUT>";
     XMLFormatTarget* myFormTarget;
+    DOMLSOutput* theOutput;
+    XMLCh tempStr[100];
+    XMLString::transcode("LS", tempStr, 99);
+    DOMImplementation *impl = 
+      DOMImplementationRegistry::getDOMImplementation(tempStr);
 
     if ( thestdout.find(file,0) != string::npos  ) {
       myFormTarget = new StdOutFormatTarget();
@@ -157,8 +162,12 @@ bool XMLInterface::serializeTo(DOMDocument* doc,char* file)
       if (verbose)
         cerr << _PREFIX_ << "Serializing to '" << file << "'" << endl;
     }
+    // new api : 
+    theOutput = ((DOMImplementationLS*)impl)->createLSOutput();
+    theOutput->setByteStream(myFormTarget);
     
-    serializer->writeNode(myFormTarget,*doc);
+    // serializer->writeNode(myFormTarget,*doc);
+    serializer->write(doc,theOutput);
 
   } catch (const XMLException& toCatch) {
     char* message = XMLString::transcode(toCatch.getMessage());
@@ -175,34 +184,35 @@ bool XMLInterface::serializeTo(DOMDocument* doc,char* file)
   }
 }
 
-DOMWriter* XMLInterface::createSerializer()
+DOMLSSerializer* XMLInterface::createSerializer()
 {
-  DOMWriter * out = NULL;
+  DOMLSSerializer * out = NULL;
   XMLCh tempStr[100];
   XMLString::transcode("LS", tempStr, 99);
   DOMImplementation *impl = 
     DOMImplementationRegistry::getDOMImplementation(tempStr);
-  out = ((DOMImplementationLS*)impl)->createDOMWriter();
+  out = ((DOMImplementationLS*)impl)->createLSSerializer();
 
   // Properties
-  if (out->canSetFeature(XMLUni::fgDOMWRTFormatPrettyPrint, true))
-    out->setFeature(XMLUni::fgDOMWRTFormatPrettyPrint, true);
+  if (out->getDomConfig()->canSetParameter(XMLUni::fgDOMWRTFormatPrettyPrint, true))
+    out->getDomConfig()->setParameter(XMLUni::fgDOMWRTFormatPrettyPrint, true);
   // ...
 
   return out;
 }
 
-DOMBuilder* XMLInterface::createParser()
+DOMLSParser* XMLInterface::createParser()
 {
-  DOMBuilder* out = NULL;
+  DOMLSParser* out = NULL;
   XMLCh tempStr[100];
   XMLString::transcode("LS", tempStr, 99);
   DOMImplementation *impl = 
     DOMImplementationRegistry::getDOMImplementation(tempStr);
   out =
-  ((DOMImplementationLS*)impl)->createDOMBuilder(DOMImplementationLS::MODE_SYNCHRONOUS,
+  ((DOMImplementationLS*)impl)->createLSParser(DOMImplementationLS::MODE_SYNCHRONOUS,
   0);
-  out->setErrorHandler(this);
+  //out->setErrorHandler(this);
+  out->getDomConfig()->setParameter(XMLUni::fgDOMErrorHandler, this);  
   // Properties: Validation, Schema ...
   // cf. http://xml.apache.org/xerces-c/program-dom.html#DOMBuilderFeatures
   //if (parser->canSetFeature(XMLUni::fgDOMValidation, true))
